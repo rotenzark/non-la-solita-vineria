@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NON la solita vineria — vini, salumi e il toast · Via Orti, Milano</title>
+<meta name="description" content="NON la solita vineria, in Via Orti a Milano (Porta Romana): una cantina studiata di vini al calice e in bottiglia, salumi e formaggi ricercati e il toast più buono di Milano. Aperto lun–sab dalle 18.">
+<meta property="og:title" content="NON la solita vineria — Via Orti, Milano">
+<meta property="og:description" content="Vini che non ti aspetti, piattini fatti come si deve. Una vineria a Porta Romana, aperta dalla sera. Non la solita, appunto.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/og-image.jpg">
+<meta property="og:locale" content="it_IT">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,500;1,6..96,600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=1">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="top">
+  <div class="wrap header__inner">
+    <a class="brand" href="#top" aria-label="NON la solita vineria, home">
+      <span class="brand__non">N<span class="brand__o" aria-hidden="true"><svg viewBox="0 0 24 24" width="15" height="15"><path d="M6 3h12l-1 6a5 5 0 0 1-10 0L6 3z" fill="currentColor"/><path d="M12 14v5M8 20h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg></span>N</span>
+      <span class="brand__tag">la solita vineria</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navigazione principale">
+      <a href="#manifesto" data-i18n="nav.about">Il locale</a>
+      <a href="#carta" data-i18n="nav.wine">La carta</a>
+      <a href="#piattini" data-i18n="nav.food">I piattini</a>
+      <a href="#dove" data-i18n="nav.where">Dove siamo</a>
+      <a class="nav__cta" href="https://nonlasolitavineria.superbexperience.com/" target="_blank" rel="noopener" data-i18n="nav.book">Prenota</a>
+    </nav>
+
+    <div class="header__tools">
+      <div class="lang" role="group" aria-label="Lingua">
+        <button type="button" class="lang__btn is-active" data-lang="it">IT</button>
+        <span aria-hidden="true">·</span>
+        <button type="button" class="lang__btn" data-lang="en">EN</button>
+      </div>
+      <button type="button" class="burger" id="burger" aria-label="Apri il menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__scrim" aria-hidden="true"></div>
+    <div class="wrap hero__inner">
+      <p class="hero__eyebrow reveal" data-i18n="hero.eyebrow">Vineria · Via Orti · Porta Romana, Milano</p>
+      <h1 class="hero__title reveal">
+        <span class="mega">NON</span>
+        <span class="serif" data-i18n="hero.title2">la solita vineria.</span>
+      </h1>
+      <p class="hero__lede reveal" data-i18n="hero.lede">Una cantina studiata di vini che non ti aspetti, salumi e formaggi ricercati e il toast più buono di Milano. Dalla sera in poi, senza fretta.</p>
+      <div class="hero__actions reveal">
+        <a class="btn btn--solid" href="https://nonlasolitavineria.superbexperience.com/" target="_blank" rel="noopener" data-i18n="hero.cta1">Prenota un tavolo</a>
+        <a class="btn btn--ghost" href="#carta" data-i18n="hero.cta2">La carta</a>
+      </div>
+      <div class="hero__status reveal" id="statusPill" aria-live="polite">
+        <span class="dot" id="statusDot"></span>
+        <span id="statusText" data-i18n="status.loading">Controllo gli orari…</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STRIP ===== -->
+  <section class="strip" aria-label="In breve">
+    <div class="wrap strip__grid">
+      <div class="strip__item reveal">
+        <span class="strip__k" data-i18n="strip.1k">Aperto</span>
+        <span class="strip__v" data-i18n="strip.1v">Lun–Sab · dalle 18</span>
+      </div>
+      <div class="strip__item reveal reveal-d1">
+        <span class="strip__k" data-i18n="strip.2k">Il momento</span>
+        <span class="strip__v" data-i18n="strip.2v">Aperitivo & apericena</span>
+      </div>
+      <div class="strip__item reveal reveal-d2">
+        <span class="strip__k" data-i18n="strip.3k">Dove</span>
+        <span class="strip__v" data-i18n="strip.3v">Via Orti, Porta Romana</span>
+      </div>
+      <div class="strip__item reveal reveal-d3">
+        <span class="strip__k" data-i18n="strip.4k">Giudizio</span>
+        <span class="strip__v">4,3 ★ · 96 <span data-i18n="strip.4v">recensioni</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MANIFESTO ===== -->
+  <section class="manifesto" id="manifesto">
+    <div class="wrap manifesto__inner reveal">
+      <p class="eyebrow" data-i18n="mani.eyebrow">Non è un nome, è una promessa</p>
+      <p class="manifesto__lead">
+        <span data-i18n="mani.p1">«NON la solita vineria» non è solo un nome.</span>
+        <em data-i18n="mani.p2">È il modo di stare qui: vini che escono dai soliti nomi, piattini fatti come si deve, e nessuno che ti mette fretta.</em>
+      </p>
+      <p class="manifesto__sub" data-i18n="mani.p3">Una cantina profonda e studiata, un menù pensato per accompagnare il vino, e due padroni di casa che ti fanno sentire a casa. Il format è studiato — e si sente.</p>
+    </div>
+  </section>
+
+  <!-- ===== NON 01 · LA CARTA ===== -->
+  <section class="neg neg--dark" id="carta">
+    <div class="wrap neg__grid">
+      <figure class="neg__img reveal">
+        <img src="img/non-05.jpg" alt="La parete dei vini: centinaia di etichette nella griglia" loading="lazy">
+      </figure>
+      <div class="neg__body reveal reveal-d1">
+        <span class="neg__no" aria-hidden="true">01</span>
+        <h2 class="neg__title"><span class="neg__non">NON</span> <span class="serif" data-i18n="neg.carta.title">la solita carta</span></h2>
+        <p data-i18n="neg.carta.p">Una parete intera di etichette, al calice o in bottiglia. Rossi, bianchi, bolle e macerati — tanti da piccoli produttori, spesso fuori dai nomi che conosci già. E se non sai da dove partire, Valentina, la sommelier, ti guida verso il calice giusto.</p>
+        <ul class="neg__list">
+          <li data-i18n="neg.carta.i1">Cantina profonda e studiata</li>
+          <li data-i18n="neg.carta.i2">Al calice o in bottiglia</li>
+          <li data-i18n="neg.carta.i3">Macerati, bolle, piccoli produttori</li>
+          <li data-i18n="neg.carta.i4">Consigliata da una sommelier vera</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NON 02 · I PIATTINI ===== -->
+  <section class="neg neg--light" id="piattini">
+    <div class="wrap neg__grid neg__grid--rev">
+      <figure class="neg__img reveal">
+        <img src="img/non-06.jpg" alt="Il toast della vineria, con i calici marchiati NON" loading="lazy">
+      </figure>
+      <div class="neg__body reveal reveal-d1">
+        <span class="neg__no" aria-hidden="true">02</span>
+        <h2 class="neg__title"><span class="neg__non">NON</span> <span class="serif" data-i18n="neg.food.title">i soliti piattini</span></h2>
+        <p data-i18n="neg.food.p">Salumi e formaggi scelti, piattini ricercati pensati per il vino — e il loro pezzo forte: il toast, che per molti è semplicemente il più buono di Milano. Poche cose, tutte fatte come si deve.</p>
+        <ul class="neg__list">
+          <li data-i18n="neg.food.i1">Il toast, il loro fiore all'occhiello</li>
+          <li data-i18n="neg.food.i2">Salumi e formaggi di qualità</li>
+          <li data-i18n="neg.food.i3">Sfoglia con coppa di testa e salsa verde</li>
+          <li data-i18n="neg.food.i4">Crostino con mascarpone e pomodorini confit</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NON 03 · L'ACCOGLIENZA ===== -->
+  <section class="neg neg--dark">
+    <div class="wrap neg__grid">
+      <figure class="neg__img reveal">
+        <img src="img/non-04.jpg" alt="L'interno della vineria: il tavolino e la parete dei vini" loading="lazy">
+      </figure>
+      <div class="neg__body reveal reveal-d1">
+        <span class="neg__no" aria-hidden="true">03</span>
+        <h2 class="neg__title"><span class="neg__non">NON</span> <span class="serif" data-i18n="neg.welcome.title">la solita accoglienza</span></h2>
+        <p data-i18n="neg.welcome.p">Ambiente curato ma informale, sotto una volta di mattoni in una via tranquilla di Porta Romana. A tenere il locale ci sono Valentina, la sommelier, e Daniele, padrone di casa: competenza e simpatia, quella rara da trovare. Ti siedi e non hai voglia di andartene.</p>
+        <ul class="neg__list">
+          <li data-i18n="neg.welcome.i1">Volta di mattoni, luci basse</li>
+          <li data-i18n="neg.welcome.i2">Valentina, la sommelier</li>
+          <li data-i18n="neg.welcome.i3">Daniele, il padrone di casa</li>
+          <li data-i18n="neg.welcome.i4">Curato ma informale, mai di fretta</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="gallery" aria-label="Galleria">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow" data-i18n="gallery.eyebrow">Una serata da NON</p>
+        <h2 class="section-head__h serif" data-i18n="gallery.title">Vini, piattini e nessuna fretta</h2>
+      </header>
+      <div class="gallery__grid">
+        <figure class="gallery__item gallery__item--tall reveal"><img src="img/non-01.jpg" alt="L'insegna NON illuminata, di sera in Via Orti" loading="lazy"></figure>
+        <figure class="gallery__item reveal reveal-d1"><img src="img/non-02.jpg" alt="Tre calici marchiati NON con un piatto di salumi" loading="lazy"></figure>
+        <figure class="gallery__item reveal reveal-d2"><img src="img/non-07.jpg" alt="Aperitivo: olive, stuzzichini e vino naturale" loading="lazy"></figure>
+        <figure class="gallery__item gallery__item--wide reveal reveal-d1"><img src="img/non-03.jpg" alt="La facciata della vineria in Via Orti di giorno" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section class="reviews" aria-label="Recensioni">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow" data-i18n="rev.eyebrow">Lo dicono i clienti</p>
+        <h2 class="section-head__h serif" data-i18n="rev.title">4,3 su Google, 96 recensioni</h2>
+      </header>
+      <div class="reviews__grid">
+        <figure class="review reveal">
+          <div class="review__stars" aria-label="5 stelle">★★★★★</div>
+          <blockquote data-i18n="rev.1">Il format è studiato ed effettivamente «Non la solita vineria» non è solo un nome. La cantina è profonda e molto studiata, il menù accompagna egregiamente il vino. E la sommelier, Valentina, super!</blockquote>
+          <figcaption>Michele M. · <span data-i18n="rev.lg">Local Guide</span></figcaption>
+        </figure>
+        <figure class="review reveal reveal-d1">
+          <div class="review__stars" aria-label="5 stelle">★★★★★</div>
+          <blockquote data-i18n="rev.2">Ho bevuto dei vini eccellenti e assaggiato piattini strepitosi, con materie prime ricercate. Daniele è un padrone di casa molto cordiale e Valentina ha interpretato alla perfezione i nostri desideri enologici.</blockquote>
+          <figcaption>Ilario V. · <span data-i18n="rev.lg">Local Guide</span></figcaption>
+        </figure>
+        <figure class="review reveal reveal-d2">
+          <div class="review__stars" aria-label="5 stelle">★★★★★</div>
+          <blockquote data-i18n="rev.3">Servizio preciso, cordiale e competente sui vini, prezzo adeguato; oserei dire il miglior toast di Milano. Molto consigliato!</blockquote>
+          <figcaption>Veronica B. · <span data-i18n="rev.lg">Local Guide</span></figcaption>
+        </figure>
+        <figure class="review reveal">
+          <div class="review__stars" aria-label="5 stelle">★★★★★</div>
+          <blockquote data-i18n="rev.4">Atmosfera piacevole, informale ma raffinata. Notevole la competenza e la simpatia di chi ci ha accompagnato nel percorso di degustazione. Salumi e formaggi tutti buonissimi. Una bella sorpresa.</blockquote>
+          <figcaption>Francesco B. · <span data-i18n="rev.lg">Local Guide</span></figcaption>
+        </figure>
+        <figure class="review reveal reveal-d1">
+          <div class="review__stars" aria-label="5 stelle">★★★★★</div>
+          <blockquote data-i18n="rev.5">Interessanti proposte al calice o alla bottiglia, e stuzzichini ricercati, salumi e formaggi di qualità. Ho apprezzato la sfoglia con coppa di testa e salsa verde.</blockquote>
+          <figcaption>Vanessa N. · <span data-i18n="rev.lg">Local Guide</span></figcaption>
+        </figure>
+        <figure class="review reveal reveal-d2">
+          <div class="review__stars" aria-label="5 stelle">★★★★★</div>
+          <blockquote data-i18n="rev.6">Very good spot for a date! They are truly masters of wine, and the friendly staff will help you make the right choice.</blockquote>
+          <figcaption>Davide R. · <span data-i18n="rev.lg">Local Guide</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DOVE ===== -->
+  <section class="where" id="dove">
+    <div class="where__media" aria-hidden="true"><img src="img/non-01.jpg" alt="" loading="lazy"></div>
+    <div class="wrap where__grid">
+      <div class="where__card reveal">
+        <p class="eyebrow" data-i18n="where.eyebrow">Dove siamo</p>
+        <h2 class="where__h serif" data-i18n="where.title">In Via Orti, a Porta Romana</h2>
+        <ul class="where__list">
+          <li>
+            <span class="where__lbl" data-i18n="where.addr">Indirizzo</span>
+            <span>Via Orti 4<br>20122 Milano</span>
+          </li>
+          <li>
+            <span class="where__lbl" data-i18n="where.hours">Orari</span>
+            <span id="hoursList"></span>
+          </li>
+          <li>
+            <span class="where__lbl" data-i18n="where.service">Servizio</span>
+            <span data-i18n="where.service.v">Consumazione sul posto · Asporto</span>
+          </li>
+        </ul>
+        <div class="where__actions">
+          <a class="btn btn--solid" href="https://nonlasolitavineria.superbexperience.com/" target="_blank" rel="noopener" data-i18n="where.cta1">Prenota un tavolo</a>
+          <a class="btn btn--ghost btn--ghost-light" href="https://www.google.com/maps/dir/?api=1&destination=NON+la+solita+vineria+Via+Orti+4+Milano" target="_blank" rel="noopener" data-i18n="where.cta2">Indicazioni</a>
+        </div>
+      </div>
+      <div class="where__map reveal reveal-d1">
+        <iframe title="Mappa — NON la solita vineria, Via Orti 4, Milano" src="https://www.google.com/maps?q=Via%20Orti%204%20Milano&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq" aria-label="Domande frequenti">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow" data-i18n="faq.eyebrow">Domande frequenti</p>
+        <h2 class="section-head__h serif" data-i18n="faq.title">Prima di venire</h2>
+      </header>
+      <div class="faq__list reveal">
+        <details class="faq__item">
+          <summary data-i18n="faq.q1">Che orari fate?</summary>
+          <p data-i18n="faq.a1">Siamo aperti dal lunedì al sabato, dalle 18:00 a mezzanotte. La domenica siamo chiusi.</p>
+        </details>
+        <details class="faq__item">
+          <summary data-i18n="faq.q2">Serve prenotare?</summary>
+          <p data-i18n="faq.a2">La prenotazione è consigliata, soprattutto nel weekend: dopo le 19:30 il locale si riempie. Puoi prenotare comodamente online.</p>
+        </details>
+        <details class="faq__item">
+          <summary data-i18n="faq.q3">Si mangia o si beve soltanto?</summary>
+          <p data-i18n="faq.a3">Entrambe le cose: oltre alla carta dei vini ci sono salumi, formaggi, piattini ricercati e il nostro toast. Perfetto per un aperitivo o un'apericena leggera.</p>
+        </details>
+        <details class="faq__item">
+          <summary data-i18n="faq.q4">Che tipo di vini avete?</summary>
+          <p data-i18n="faq.a4">Una carta ampia e studiata: rossi, bianchi, bolle e macerati, molti da piccoli produttori. Si può bere al calice o scegliere una bottiglia, con la guida della sommelier.</p>
+        </details>
+        <details class="faq__item">
+          <summary data-i18n="faq.q5">Si può prendere da asporto?</summary>
+          <p data-i18n="faq.a5">Sì, oltre alla consumazione sul posto è possibile l'asporto. La consegna a domicilio invece non è prevista.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <span class="footer__non">NON</span>
+      <p data-i18n="footer.tag">la solita vineria.<br>Vini, salumi e il toast, in Via Orti a Milano.</p>
+    </div>
+    <div class="footer__col">
+      <span class="footer__k" data-i18n="footer.contacts">Contatti</span>
+      <span>Via Orti 4</span>
+      <span>20122 Milano</span>
+      <a href="https://nonlasolitavineria.superbexperience.com/" target="_blank" rel="noopener" data-i18n="footer.book">Prenota online</a>
+    </div>
+    <div class="footer__col">
+      <span class="footer__k" data-i18n="footer.hoursk">Orari</span>
+      <span data-i18n="footer.hours1">Lun–Sab · 18:00–00:00</span>
+      <span data-i18n="footer.hours2">Domenica chiuso</span>
+    </div>
+  </div>
+  <div class="wrap footer__base">
+    <p class="footer__demo" data-i18n="footer.demo">Sito dimostrativo realizzato da Bespoke Studio · non è il sito ufficiale dell'attività.</p>
+    <button type="button" class="to-top" id="toTop" aria-label="Torna su" data-i18n-attr="aria-label:footer.totop">↑</button>
+  </div>
+</footer>
+
+<!-- Mobile quick bar -->
+<div class="quickbar">
+  <a href="https://www.google.com/maps/dir/?api=1&destination=NON+la+solita+vineria+Via+Orti+4+Milano" target="_blank" rel="noopener" data-i18n="qb.dir">Indicazioni</a>
+  <a href="https://nonlasolitavineria.superbexperience.com/" target="_blank" rel="noopener" class="quickbar--accent" data-i18n="qb.book">Prenota</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WineBar",
+  "name": "NON la solita vineria",
+  "description": "Vineria a Porta Romana, Milano: cantina studiata di vini al calice e in bottiglia, salumi, formaggi e il toast più buono di Milano.",
+  "image": "img/og-image.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Orti 4",
+    "postalCode": "20122",
+    "addressLocality": "Milano",
+    "addressCountry": "IT"
+  },
+  "servesCuisine": ["Wine bar", "Italian"],
+  "priceRange": "€€",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.3",
+    "reviewCount": "96"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "18:00",
+      "closes": "00:00"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Che orari fate?","acceptedAnswer":{"@type":"Answer","text":"Aperti dal lunedì al sabato, dalle 18:00 a mezzanotte. Domenica chiuso."}},
+    {"@type":"Question","name":"Serve prenotare?","acceptedAnswer":{"@type":"Answer","text":"La prenotazione è consigliata, soprattutto nel weekend. Si può prenotare online."}},
+    {"@type":"Question","name":"Si mangia o si beve soltanto?","acceptedAnswer":{"@type":"Answer","text":"Entrambe: oltre alla carta dei vini ci sono salumi, formaggi, piattini e il toast. Perfetto per aperitivo o apericena."}},
+    {"@type":"Question","name":"Che tipo di vini avete?","acceptedAnswer":{"@type":"Answer","text":"Una carta ampia e studiata: rossi, bianchi, bolle e macerati, molti da piccoli produttori, al calice o in bottiglia."}},
+    {"@type":"Question","name":"Si può prendere da asporto?","acceptedAnswer":{"@type":"Answer","text":"Sì, oltre alla consumazione sul posto è possibile l'asporto. Non è prevista la consegna a domicilio."}}
+  ]
+}
+</script>
+<script src="js/main.js?v=1"></script>
+</body>
+</html>
